@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tabella dati - Fixed Header</title>
+	<style>
+
+		table{display:table;table-layout:fixed;font:normal normal 400 medium/normal sans-serif;text-align:left;text-align-last:left;text-decoration:none;min-width:0;max-width:100%;width:100%;vertical-align:baseline;white-space:normal;margin:0 auto;border-collapse:collapse;border:2px solid gray;border-spacing:2px}
+		thead{display:table-header-group}
+		tbody{display:table-row-group}
+		tr{display:table-row;border-width:0}
+		td,th{display:table-cell;white-space:nowrap;border-width:1px;padding:0 0 0 .2em}
+		tr,td,th{vertical-align:inherit}
+		thead,tbody{vertical-align:middle;text-align:inherit;text-align-last:inherit;border-width:0;padding:0;margin:0}
+		thead,tbody,tr,td,th{background:transparent;border-color:inherit;border-style:inherit;text-decoration:inherit;color:inherit}
+
+		.pivot{font:0/0 sans-serif;background:#000;color:#eee;}
+		.pivot >.wrap{display:inline-block;max-height:calc(100vh - 60px);overflow:hidden;overflow-y:scroll;background:transparent;border:2px solid #000;}
+		.pivot >.wrap:nth-child(1){min-height:39px}
+		.pivot >.wrap:nth-child(1)::-webkit-scrollbar{visibility:hidden;pointer-events:none}
+		.pivot >.wrap:nth-child(2){border-top:0}
+		.pivot >.wrap >table{border-width:0}
+		.pivot >.wrap >table.data{background:#fff;color:#000}
+
+	</style>
+</head>
+<body>
+
+	<div class="pivot">
+		<span class="wrap">
+			<table class="filters">
+				<thead>
+					<tr>
+						<th rowspan="2">A</th>
+						<th>B</th>
+						<th>C</th>
+					</tr>
+					<tr>
+						<th>B</th>
+						<th>C</th>
+					</tr>
+				</thead>
+			</table>
+			</table>
+		</span>
+		<span class="wrap">
+			<table class="data">
+				<tbody>
+					<tr>
+						<td>1.1</td>
+						<td>2.1</td>
+						<td>3.1</td>
+					</tr>
+					<tr>
+						<td>1.2</td>
+						<td>2.2</td>
+						<td>3.2</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>1.3</td>
+						<td>2.3</td>
+						<td>3.3</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</span>
+	</div>
+
+</body>
+</html>

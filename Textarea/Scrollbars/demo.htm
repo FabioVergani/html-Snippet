@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Textarea Css</title>
+		<link rel="stylesheet" href="sb.css">
+		<style>
+ body{font:11px/normal sans-serif;}
+ textarea{resize:vertical;width:100%}
+ textarea{
+	box-sizing:border-box;
+	margin:4px;
+	min-height:25px;
+	background:#ecf1f7;
+	text-rendering:optimizeLegibility;
+}
+
+textarea:focus{box-shadow:0 0 4px 1px #c4deff;outline:1px solid #175e96}
+
+textarea::selection{color:#fff;background:#346c98}
+textarea:active::selection{color:#fcffef;background:#64aae2;}
+
+textarea::-webkit-scrollbar{background:#e1e1e1}
+textarea::-webkit-scrollbar:vertical{width:12px}
+textarea::-webkit-scrollbar:horizontal{height:12px}
+
+textarea::-webkit-scrollbar-button{display:none}
+
+textarea::-webkit-scrollbar-corner{background:#d2d2d2}
+
+textarea::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track-piece:end,
+textarea::-webkit-scrollbar-track-piece:start{background:0 0}
+
+textarea::-webkit-scrollbar-track-piece:vertical:start:active{background-image:linear-gradient(to bottom,#eaeaea,#aac4de)}
+textarea::-webkit-scrollbar-track-piece:vertical:end:active{background-image:linear-gradient(to bottom,#aac4de,#eaeaea)}
+textarea::-webkit-scrollbar-track-piece:vertical:end{background-image:linear-gradient(to bottom,#e1e1e1,#d2d2d2)}
+
+textarea::-webkit-scrollbar-track-piece:horizontal{background:#d2d2d2}
+textarea::-webkit-scrollbar-track-piece:horizontal:start{background:linear-gradient(to left,#d2d2d2 0%,#e0e0e0 100%)}
+textarea::-webkit-scrollbar-track-piece:horizontal:start:active{background-image:linear-gradient(to left,#aac4de,#e0e0e0)}
+textarea::-webkit-scrollbar-track-piece:horizontal:end:active{background-image:linear-gradient(to right,#aac4de,#d2d2d2)}
+
+textarea::-webkit-scrollbar-thumb{background:#aeaeae;border:solid}
+textarea::-webkit-scrollbar-thumb:vertical{min-height:8px;border-width:1px 0;border-color:#f1f1f1 #aeaeae #9f9f9f;background:linear-gradient(to bottom,#c5c5c5 0%,#aeaeae 100%)}
+textarea::-webkit-scrollbar-thumb:horizontal{min-width:8px;border-width:0 1px;border-color:#f1f1f1 #aeaeae #9f9f9f}
+
+
+textarea::-webkit-scrollbar-thumb:vertical:active,
+textarea::-webkit-scrollbar-thumb:horizontal:active{background:#7599bf;border:1px solid #5988ac}
+
+/*
+overflow:scroll;
+white-space:nowrap
+text-shadow:1px 1px 1px #3c6d95,0 0 4px #305c80
+text-shadow:1px 1px 0 #0a273e,0 0 4px #000 !important
+#a0c7f7
+transition:box-shadow .4s ease;
+*/
+ 
+ </style>
+	</head>
+	<body>
+
+<!--
+Don't use:
+- autocapitalize
+- vertical-align: baselin (behavior will be unpredictable)
+Default:
+- cols="20"
+-->
+
+<textarea rows="8" spellcheck="false" autocomplete="off" placeholder="Lorem Ipsum">lorem ipsum dolor sit amet, accusam volutpat suavitate his ut. et impedit ancillae intellegam pri, simul inermis oportere eu quo, qui clita omnesque consulatu cu. vim ut illud maluisset, id mel feugait constituto, nec dicant propriae gloriatur et. mel ignota dolorem fuisset ad.</textarea>
+
+
+<p>
+wrap="soft" (default value)<br>
+all line breaks in the value consist of a CR+LF pair, but does not insert any additional line breaks.
+The Soft state indicates that the text in the textarea is not to be wrapped when it is submitted (though it can still be wrapped in the rendering).
+</p>
+<textarea rows="8" spellcheck="false" autocomplete="off" placeholder="Lorem Ipsum">lorem ipsum dolor sit amet, accusam volutpat suavitate his ut. et impedit ancillae intellegam pri, simul inermis oportere eu quo, qui clita omnesque consulatu cu. vim ut illud maluisset, id mel feugait constituto, nec dicant propriae gloriatur et. mel ignota dolorem fuisset ad.</textarea>
+
+<p>
+ wrap="hard"<br>
+inserts line breaks (CR+LF) so that each line has no more than the width of the control; (the cols attribute must be specified.)
+The Hard state indicates that the text in the textarea is to have newlines added by the user agent so that the text is wrapped when it is submitted.
+</p>
+<textarea rows="8" spellcheck="false" autocomplete="off" placeholder="Lorem Ipsum">lorem ipsum dolor sit amet, accusam volutpat suavitate his ut. et impedit ancillae intellegam pri, simul inermis oportere eu quo, qui clita omnesque consulatu cu. vim ut illud maluisset, id mel feugait constituto, nec dicant propriae gloriatur et. mel ignota dolorem fuisset ad.</textarea>
+
+	</body>
+</html>

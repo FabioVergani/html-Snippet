@@ -1,0 +1,50 @@
+textarea{
+	text-rendering:optimizeLegibility;
+	text-shadow:none;
+	box-shadow:none;
+	box-sizing:border-box;
+	overflow-x:auto;
+	min-height:25px;
+	height:120px;
+	padding:1em;
+	margin:4px;
+	outline:0;
+	border:1px solid #585858;
+	background:#ecf1f7;
+	color:#000;
+}
+
+textarea:focus{box-shadow:0 0 4px 1px #c4deff;outline:1px solid #a4cff1}
+textarea::selection{color:#fff;background:#346c98}
+textarea:hover::selection,
+textarea:active::selection{color:#fcffef;background:#64aae2}
+
+textarea::-webkit-scrollbar-button{display:none}
+
+textarea::-webkit-scrollbar{background:#e1e1e1}
+textarea::-webkit-scrollbar:vertical{width:12px}
+textarea::-webkit-scrollbar:horizontal{height:12px}
+
+textarea::-webkit-scrollbar-corner{background:#d2d2d2;}
+
+textarea::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track-piece:end,
+textarea::-webkit-scrollbar-track-piece:start{background:transparent}
+
+textarea::-webkit-scrollbar-track-piece:vertical:start:active{background-image:linear-gradient(to bottom,#eaeaea,#aac4de)}
+
+textarea::-webkit-scrollbar-track-piece:vertical:end{background-image:linear-gradient(to bottom,#e1e1e1,#d6d6d6)}
+textarea::-webkit-scrollbar-track-piece:vertical:end:active{background-image:linear-gradient(to bottom,#aac4de,#d6d6d6)}
+
+textarea::-webkit-scrollbar-track-piece:horizontal{background:#e1e1e1}
+textarea::-webkit-scrollbar-track-piece:horizontal:end{background:linear-gradient(to left,#d2d2d2 0%,#e0e0e0 100%)}
+textarea::-webkit-scrollbar-track-piece:horizontal:start:active{background-image:linear-gradient(to left,#aac4de,#e0e0e0)}
+
+textarea::-webkit-scrollbar-track-piece:horizontal:end:active{background-image:linear-gradient(to right,#aac4de,#d6d6d6)}
+
+textarea::-webkit-scrollbar-thumb{background:#aeaeae;border:solid}
+textarea::-webkit-scrollbar-thumb:vertical{min-height:8px;border-width:1px 0;border-color:#e6e6e6 #aeaeae #9f9f9f;background:linear-gradient(to bottom,#c5c5c5 0%,#aeaeae 100%)}
+textarea::-webkit-scrollbar-thumb:horizontal{min-width:8px;border-width:0 1px;border-color:#f1f1f1 #aeaeae #9f9f9f}
+textarea::-webkit-scrollbar-thumb:horizontal:active,
+textarea::-webkit-scrollbar-thumb:vertical:active{background:#7599bf;border:1px solid #5988ac}
+

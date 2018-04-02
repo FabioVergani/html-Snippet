@@ -1,0 +1,18 @@
+textarea{
+box-sizing:border-box;
+display:block;
+width:100%;
+max-width:100%;
+margin:0 auto 8px auto;
+}
+
+textarea,a{font:13px/16px Arial;}
+
+#bm-code textarea{min-height:120px;}
+#bm-link{word-break:break-all;}
+#bm-title{overflow:hidden;resize:none;}
+
+
+/*
+[id^="bm-"] {}
+*/

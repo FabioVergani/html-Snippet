@@ -1,0 +1,51 @@
+main,
+body,
+html{
+	display:block
+}
+body{
+	margin:8px
+}
+table{
+	display:table;
+	border-collapse:separate;
+	border-spacing:2px;
+	border-color:grey
+}
+caption{
+	display:table-caption;
+	caption-side:top
+}
+colgroup{
+	display:table-column-group
+}
+col{
+	display:table-column
+}
+tfoot,
+tbody,
+thead{
+	vertical-align:middle
+}
+thead{
+	display:table-header-group
+}
+tr{
+	display:table-row;
+	vertical-align:inherit
+}
+th{
+	display:table-cell;
+	vertical-align:inherit
+}
+tbody{
+	display:table-row-group
+}
+td{
+	display:table-cell;
+	font-size:1rem;
+	line-height:normal
+}
+tfoot{
+	display:table-footer-group
+}

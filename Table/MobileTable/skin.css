@@ -1,0 +1,22 @@
+html{
+	font:500 1em/normal sans-serif;
+	background:#fbfbfb;
+	color:#000
+}
+table{
+	border-color:#babcbf;
+}
+.pretty table{
+	border-width:0;
+	border-spacing:0;
+	border-collapse:collapse;
+	border-color:#383838;
+}
+.pretty caption:not(:hover){
+	user-select:none
+}
+.pretty thead{
+	text-shadow:1px 1px 0 #000;
+	background:#383838;
+	color:#eee
+}
